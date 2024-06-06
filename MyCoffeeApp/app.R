@@ -8,7 +8,8 @@
 #######################################################################
 
 #######################################################################
-############### R CODE before UI and Server to generate data "Coffee"
+#######################################################################
+# R CODE before UI and Server to generate data "Coffee"
 library(shiny)
 library(dplyr)
 library(reshape2)
@@ -35,7 +36,10 @@ for (i in 1: length(df[1,])) {
 Coffee <-df
 
 #######################################################################
+#######################################################################
 #  Define UI for application that draws a histogram
+
+
 ui <- fluidPage(    
   
   # Give the page a title
@@ -62,7 +66,10 @@ ui <- fluidPage(
 
 
 #######################################################################
-###############  Define server logic required to draw a histogram
+#######################################################################
+#  Define server logic required to draw a histogram
+
+
 server <- function(input, output) {
   
   # Fill in input by region (input$region) in the slot created for a plot
@@ -79,7 +86,9 @@ server <- function(input, output) {
   })
 }
 
-
 #######################################################################
-###############  Run the application
+#######################################################################
+# Run the application
+
 shinyApp(ui = ui, server = server)
+
