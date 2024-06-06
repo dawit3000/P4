@@ -16,4 +16,4 @@
    - The last segment is Server logic
 
 
-More info available in this [slides created using RMarkdown Presentation](https://rpubs.com/dawit3000/1193133)
+More info available in this [Release Presentationof the Coffee App](https://rpubs.com/dawit3000/1193133)
