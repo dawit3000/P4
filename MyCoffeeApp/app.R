@@ -53,10 +53,23 @@ ui <- fluidPage(
     sidebarPanel(
       selectInput("country", "CHOOSE A COUNTRY FROM 2023 TOP 10:", 
                   choices=colnames(Coffee)),
-      helpText("Original Coffee data is from Kaggle")
-    ),
-    
-    # Create a spot for the barplot
+      helpText("Original Coffee data is from Kaggle"),
+   
+      ## Documentation
+      p("================================================="),
+      tags$u(strong(p("Documentation"))),
+      strong(p("How to use this Application")),
+      p("First, Select a country from top 10 of the above year(2023)"),
+      p("The plot displayed is last 10 years trend of that country"),
+      p("more info available at the link below:"),
+      p("https://rpubs.com/dawit3000/1193133"),
+      
+      
+      
+      
+       ),
+   
+     # Create a spot for the barplot
     mainPanel(
       plotOutput("coffeePlot")  
     )
